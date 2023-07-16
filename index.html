@@ -1,81 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neon Login Page</title>
+    <title>Feeder's Advisor</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #222;
-            color: #fff;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-        .login-container {
-            text-align: center;
-            background-color: #333;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-        }
+header {
+    background-color: #4faaad;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
 
-        .input-field {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: none;
-            border-radius: 5px;
-        }
+nav {
+    background-color: #56595a;
+    padding: 10px;
+}
 
-        .neon-button {
-            background-color: #000;
-            color: #fff;
-            border: none;
-            border-radius: 30px;
-            padding: 12px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-            position: relative;
-            overflow: hidden;
-        }
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
 
-        .neon-button::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(45deg, #ffcc00, #ff00cc, #00ccff, #ffcc00);
-            background-size: 400% 400%;
-            animation: gradient-shift 10s ease infinite;
-        }
+nav ul li {
+    margin: 0 10px;
+}
 
-        @keyframes gradient-shift {
-            0% {
-                background-position: 0% 50%;
-            }
-            100% {
-                background-position: 100% 50%;
-            }
-        }
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+section.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px;
+    color: #fff;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+section.features {
+    display: flex;
+    justify-content: center;
+    background-color: #4faaad;
+    padding: 50px;
+}
+
+.feature {
+    max-width: 300px;
+    margin: 0 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
     </style>
 </head>
 <body>
-    <div class="login-container">
-        <h1>Neon Login Page</h1>
-        <form>
-            <input type="text" class="input-field" placeholder="Username">
-            <input type="password" class="input-field" placeholder="Password">
-            <button type="submit" class="neon-button">Login</button>
-        </form>
-    </div>
+    <header>
+        <h1>Feeder's Advisor</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Discover the Possibilities</h2>
+            <p>Experience a world of endless opportunities and creativity.</p>
+            <br>
+            <a href="#" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <h1 style="background-color: bisque;">The main Goals<br>of ours:</h1>
+        <div class="feature">
+            <h3>Goal 1</h3>
+            <p>To make sure that everyone gains knowledge about the tncsc web site.</p>
+        </div>
+        <div class="feature">
+            <h3>Goal 2</h3>
+            <p>To provide a better service to Farmers
+.</p>
+        </div>
+        <div class="feature">
+            <h3>Easy Customization</h3>
+            <p>Customize your website easily with our intuitive tools.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Feeder's Advisor. All rights reserved.</p>
+    </footer>
+   
 </body>
 </html>
